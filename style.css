@@ -186,7 +186,7 @@
             header img {
                 width: 120px;
                 align-items: center;
-                margin: 0 0 0 95px;
+                margin: 0 0 0 70px;
             }
             header h2 {
                 font-size: 1.8em;
@@ -218,5 +218,8 @@
             }
             .social-links a {
                 font-size: 1.2em;
+            }
+            .section img {
+                padding-top: 2px;
             }
         }
