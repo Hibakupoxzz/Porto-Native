@@ -27,7 +27,7 @@
             margin-bottom: 20px;
         }
         header .header-text {
-            max-width: 600px;
+            max-width: 900px;
         }
         header h2 {
             font-size: 2.5em;
@@ -35,7 +35,7 @@
         }
         header p {
             font-size: 1.2em;
-            padding: 30px 0 0 0;
+            padding: 20px 0 0 0;
         }
         nav {
             display: flex;
@@ -50,6 +50,11 @@
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
+            transition: scale 500ms, filter 500ms;
+        }
+        .navbar-list:has(:hover) :not(:hover) {
+            scale: 0.8;
+            filter: blur(1px);
         }
         .navbar-list li {
             display: inline-block;
@@ -75,7 +80,7 @@
             margin-bottom: 40px;
             background: #1f1f1f;
             border-radius: 10px;
-            padding: 20px;
+            padding: 17px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
         }
         .section h2 {
@@ -112,6 +117,7 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            max-width: 300px;
         }
         .project-card img {
             width: 100%;
@@ -125,6 +131,9 @@
         .project-card .project-info h3 {
             color: #e91e63;
             margin-bottom: 10px;
+        }
+        .section left {
+            padding-left: 20px;
         }
         footer {
             background: #1f1f1f;
